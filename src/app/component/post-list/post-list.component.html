@@ -1,0 +1,8 @@
+<div class="row h-100 overflow-auto">
+  <div *ngFor="let post of postList | async" class="card border-dark mb-3 m-2" style="max-width: 18rem;">
+    <div class="card-body text-dark">
+      <h5 class="card-title" [textContent]="post.title"></h5>
+      <p class="card-text" [textContent]="post.body"></p>
+    </div>
+  </div>
+</div>
