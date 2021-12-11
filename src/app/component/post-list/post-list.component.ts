@@ -3,7 +3,7 @@ import {Observable, Subscription} from "rxjs";
 import {Post} from "../../model/post";
 import {PostState} from "../../states/Post.state";
 import {Select, Store} from "@ngxs/store";
-import {GetPosts} from "../../action/post.action";
+import {DeletePost, GetPosts} from "../../action/post.action";
 
 @Component({
   selector: 'app-post-list',
@@ -34,7 +34,10 @@ export class PostListComponent implements OnInit, OnDestroy {
         this.store.dispatch(new GetPosts());
       }
     })
+  }
 
+  deletepost(id: number) {
+    if (confirm('do you want to delete this')) this.store.dispatch(new DeletePost(id))
   }
 
 }

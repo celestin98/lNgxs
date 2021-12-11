@@ -11,18 +11,18 @@ export class PostService {
   }
 
   fetchPosts() {
-    return this.http.get<Post[]>('https://my-json-server.typicode.com/celestin98/lNgxs/postsDb');
+    return this.http.get<Post[]>('http://localhost:3000/postsDb');
   }
 
   deletePost(id: number) {
-    return this.http.delete(`https://my-json-server.typicode.com/celestin98/lNgxs/postsDb/${id}`);
+    return this.http.delete(`http://localhost:3000/postsDb/${id}`);
   }
 
   addPost(payload: Post) {
-    return this.http.post<Post>('https://my-json-server.typicode.com/celestin98/lNgxs/postsDb/', payload);
+    return this.http.post<Post>('http://localhost:3000/postsDb/', payload);
   }
 
   updatePost(payload: Post, id: number) {
-    return this.http.put<Post>(`https://my-json-server.typicode.com/celestin98/lNgxs/postsDb/${id}`, payload);
+    return this.http.put<Post>(`http://localhost:3000/postsDb/${id}`, payload);
   }
 }

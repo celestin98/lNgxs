@@ -1,0 +1,10 @@
+.post {
+  border: #3c3c3c 1px solid;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.post img {
+  width: 50%;
+  height: 100%;
+}

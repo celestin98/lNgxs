@@ -4,6 +4,18 @@
       "id": 1,
       "title": "nisi porta",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 2,
+      "title": "sdsfs",
+      "body": "dsadasd",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "sddsfs",
+      "body": "dfds",
+      "userId": 1
     }
   ],
   "profile": {
